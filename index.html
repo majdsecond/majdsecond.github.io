@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1 id="sup">Today</h1>
+  <script>
+    const date = new Date(new Date().toLocaleString("en-US", {timeZone: "America/Toronto"}));
+
+
+    if (date.getDate() % 2 == 0) {
+      document.getElementById("sup").innerHTML = "Today is a Day 2";
+    } else {
+      document.getElementById("sup").innerHTML = "Today is a Day 1";
+    }
+  </script>
+
+
+</body>
+
+
+
+</html>
